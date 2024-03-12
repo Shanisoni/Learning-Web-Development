@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="Portfolio_Project.css" />
+    <script
+      src="https://kit.fontawesome.com/74ea9753e4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav class="nav-container">
+          <span class="logo"><span>W</span>elcome!</span>
+          <!-- <img src="images/logo.png" class="logo" alt="" /> -->
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-solid fa-circle-xmark" onClick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-solid fa-bars" onClick="openMenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p class="" , style="color:rgb(4, 86, 240)">Full-Stack Web Developer </p>
+          <h1>Hi, I'm <span>Shani Soni 
+
+          </span><br />From Ghaziabad</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Shani -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="work-3-.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Hello! 👋 I'm Shani Soni, a driven 3rd-year B.Tech student at Ajay Kumar Garg Engineering College.
+ My academic journey is fueled by a fervent passion for Web Development and a keen interest in Data Science.
+
+ 💡In the dynamic world of technology, I find joy in crafting seamless digital experiences and pushing the boundaries of what's possible.
+Beyond the code, I bring a strong foundation in problem-solving and a creative approach to challenges.
+My commitment to excellence is reflected not just in my academic pursuits but also in my eagerness to stay ahead of industry trends. 
+I'm on a continuous quest for knowledge, exploring new technologies, and seeking opportunities to apply my skills in innovative projects.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/iOS apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2021-Current</span><br />UI/UX Design Training at AKGEC
+                </li>
+                <li><span>2019-2021 </span><br />Team lead at StarApp LLC</li>
+                <li>
+                  <span>2017-19</span><br />UI/UX Design Executive at Aroma
+                  Digital Ltd.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2016</span><br />Designing Web/App interfaces</li>
+                <li><span>2016</span><br />Web app Development</li>
+                <li><span>2014</span><br />BBA from IIT Delhi</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------Services------------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+              minus alias, itaque placeat laboriosam sit eos?
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+              minus alias, itaque placeat laboriosam sit eos?
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+              minus alias, itaque placeat laboriosam sit eos?
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------portfolio--------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="work-1.png" alt="image" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connects you to the talented people around the world.
+                Download it from play store.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-2.png" alt="image" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The app connects you to the talented people around the world.
+                Download it from play store.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-3.png" alt="image" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                The app connects you to the talented people around the world.
+                Download it from play store.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- ---------------contact---------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="Contact-btn">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>shanisoni7084@gmail.com</p>
+            <p><i class="fas fas fas fa-phone-square"></i>7084160126</p>
+
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fa-brands fab fa-twitter-square"></i></a>
+              <a href="#"
+                ><i class="fa-brands fab fab fa-instagram-square"></i
+              ></a>
+              <a href="#"><i class="fa-brands fab fab fa-linkedin"></i></a>
+            </div>
+            <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet" action="">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <inputtype="email"
+              name="Email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="Message"
+              rows="6"
+              placeholder="Your Message"
+            ></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="copyright">
+      <p>
+        Copyright © Shani. Made with <i class="fas fas fa-heart"></i> Love
+      </p>
+    </div>
+  </div>
+  <script>
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+
+    function openTab(tabName) {
+      for (tabLink of tabLinks) {
+        tabLink.classList.remove("active-link");
+      }
+      for (tabContent of tabContents) {
+        tabContent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+
+      document.getElementById(tabName).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    var sideMenu = document.getElementById("sideMenu");
+    function openMenu() {
+      sideMenu.style.right = "0";
+    }
+    var sideMenu = document.getElementById("sideMenu");
+    function closeMenu() {
+      sideMenu.style.right = "-200px";
+    }
+  </script>
+
+  <script>
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbzJclpM88ssSzkkajpH8108xiKhRFxrVO03wF3bsTXPQItWmMRooea9KYVRGL6BPnzdDA/exec";
+    const form = document.forms["submit-to-google-sheet"];
+    const msg = document.getElementById("msg");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => {
+          msg.innerHTML = "Message sent successfully ";
+          setTimeout(function () {
+            msg.innerHTML = "";
+          }, 3000);
+          form.reset();
+        })
+        .catch((error) => console.error("Error!", error.message));
+    });
+  </script>
+</body>
+</html>

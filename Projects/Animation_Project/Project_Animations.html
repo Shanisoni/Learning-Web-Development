@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations 
+
+    </title>
+    
+     
+    <style>
+            *{
+              margin: 0px;
+              padding: 0px;
+              box-sizing: border-box;
+            }
+            
+            .container{
+              background-color: rgb(40, 179, 197); 
+              border: 8px solid rgb(0, 0, 0);
+              height: 100vh;
+              width: 100vw;
+              box-sizing: border-box;
+            }
+            .box{
+              border: 3px solid rgb(172, 25, 25);
+              width: 400px;
+              height: 100px;
+              border-radius: 14px;
+              background-color: blue;
+              margin: 20px;
+              position: relative; 
+              /* we use position to relative to use the left right top bottom properties  */
+              /* animation-name: rightMovement; */
+              /* animation-duration: 3s; */
+              /* animation-iteration-count: infinite; */
+              /* animation-iteration-count: 2; */
+              /* animation-delay: 0s; */
+              /* animation-timing-function: ease; */
+              /* animation-timing-function: linear; */
+              /* animation-timing-function: ease-in; */
+              /* animation-timing-function: ease-out; */
+              /* animation-timing-function: ease-out; cubic-bezier(1 ,1 ,1,1); */
+              /* animation-direction:alternate-reverse; */
+              /* animation-fill-mode allows you decide where ypu want to stop your item */
+              /* animation-fill-mode:forwards; */
+              
+              /* Short Cut ; */
+
+              /* @keyframes duration | easing-function | delay | itration-count | direction | fill-mode | play-state | name */
+              animation: 1s linear 1s infinite alternate none running rightMovement;
+
+
+
+
+            }
+            @keyframes rightMovement {
+              from{
+                top: 0;
+                left:0;
+              }
+
+              to{
+                top:0;
+                left:1500px;
+              }
+            }
+
+            .box2{
+              border: 3px solid rgb(172, 25, 25);
+              width: 400px;
+              height: 100px;
+              border-radius: 14px;
+              background-color: blue;
+              margin: 20px;
+              position: relative; 
+              animation: 1s linear 1s infinite alternate none running leftMovement;
+            }
+
+            @keyframes leftMovement {
+              from{
+                top: 650px;
+                left:1500px;
+              }
+
+              to{
+                top:650px;
+                left:0px;
+              }
+            }
+
+
+            .circle{
+              border: 3px solid rgb(172, 25, 25);
+              width: 100px;
+              height: 100px;
+              border-radius: 50px;
+              background-color: blue;
+              margin: 10px;
+              top:30%;
+              left:40%;
+              position: relative; 
+              animation: 1s ease-in-out 0s infinite alternate none running circleMovement;
+
+            }
+
+            @keyframes circleMovement {
+              0%{
+                top:1%;
+                left:50%;
+
+              }
+
+              30%{
+                  
+                top:1%;
+                left:70;
+              }
+
+              60%{
+                top:70%;
+                left:10%;
+                
+              }
+
+              100%{
+                top:65;
+                left:80;
+                
+              }
+              
+
+              
+
+              
+              
+            }
+
+    </style>
+
+
+
+
+</head>
+<body>
+    
+  <div class="container">
+
+      <div  class="box"> 
+
+        
+      </div>
+
+      <div class="box2">
+
+      </div>
+
+      <div class="circle">
+
+      </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+</body>
+</html>

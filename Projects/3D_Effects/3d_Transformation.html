@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 3D Transformation</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+        }
+        .item{
+            border: solid 2px black;
+            margin-bottom: 6px;
+            height: 150px;
+            width: 150px;
+            /* margin: 900px; */
+            padding: 2rem;
+            color: brown;
+            background-color: aqua;
+            
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3 , 1fr );
+            gap: 3rem;
+            padding: 100px;
+        }
+        #RotateX:hover{
+
+            transform: RotateX(45deg);
+
+        }
+        #RotateY:hover{
+            transform: RotateY(45deg);
+        }
+        #RotateZ:hover{
+            transform: RotateZ(45deg);
+        }
+        #TranslateX:hover{
+            transform: TranslateX(45px);
+            /* If we give negative value such as -45px then it will move in negative direxction */
+        }
+        #TranslateY:hover{
+            transform: TranslateY(45px);
+            transition-duration:500ms ;
+        }
+        #TranslateZ:hover{
+            transform:perspective(300px) TranslateZ(35px);
+            transition-duration:500ms ;
+        }
+        #ScaleX:hover{
+            transform: scaleX(1.2);
+            transition-duration:400ms ;
+
+        }
+/*       This property is used to tilt this item */
+
+        /* #ScaleY:hover{
+            transform: skew(30deg);
+        } */
+
+        #ScaleY:hover{
+            transform: scaleY(1.2);
+            transition-duration:400ms ;
+
+        }
+
+        /* Mast Transformation yha h bro  */
+
+        /* 3D Formation */
+        #ScaleZ:hover{
+            transform:perspective(100px) scale(2) rotateY(20deg);
+            transition-duration:400ms ;
+
+        }
+        #ScaleZ:hover{
+        background-color: #cecb0f;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="RotateX">RotateX</div>
+        <div class="item" id="RotateY">RotateY</div>
+        <div class="item" id="RotateZ">RotateZ</div>
+        <div class="item" id="TranslateX">TranslateX</div>
+        <div class="item" id="TranslateY">TranslateY</div>
+        <div class="item" id="TranslateZ">TranslateZ</div>
+        <div class="item" id="ScaleX">ScaleX</div>
+        <div class="item" id="ScaleY">ScaleY</div>
+        <div class="item" id="ScaleZ">ScaleZ</div>
+    </div>
+    
+</body>
+</html>
