@@ -1,239 +1,74 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Solid Template</title>
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/style.css">
-    <style>
-        /* Additional custom styles for the landing page */
-        body {
-            font-family: 'IBM Plex Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
-
-        .site-header {
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 999;
-        }
-
-        .brand.header-brand h1 {
-            margin: 0;
-        }
-
-        .hero {
-            background-color: #007bff;
-            color: #fff;
-            padding: 100px 0;
-            text-align: center;
-        }
-
-        .hero-title {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        .hero-paragraph {
-            font-size: 18px;
-            margin-bottom: 40px;
-        }
-
-        .hero-cta .button {
-            margin-right: 20px;
-        }
-
-        .features {
-            padding: 100px 0;
-            background-color: #fff;
-            text-align: center;
-        }
-
-        .feature {
-            margin-bottom: 40px;
-            padding: 0 20px;
-        }
-
-        .feature-inner {
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 30px;
-            background-color: #fff;
-        }
-
-        .feature-icon img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .feature-title {
-            font-size: 24px;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-
-        .feature-paragraph {
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 0;
-        }
-
-        .pricing {
-            padding: 100px 0;
-            background-color: #007bff;
-            color: #fff;
-            text-align: center;
-        }
-
-        .pricing-table {
-            background-color: #fff;
-            border-radius: 5px;
-            padding: 40px 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 40px;
-        }
-
-        .pricing-table-header {
-            margin-bottom: 20px;
-        }
-
-        .pricing-table-price {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-
-        .pricing-table-features {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            text-align: left;
-            margin-bottom: 20px;
-        }
-
-        .pricing-table-features li {
-            margin-bottom: 10px;
-        }
-
-        .pricing-table-cta {
-            margin-top: 20px;
-        }
-
-        .cta {
-            background-color: #007bff;
-            color: #fff;
-            padding: 100px 0;
-            text-align: center;
-        }
-
-        .cta-title {
-            font-size: 36px;
-            margin-bottom: 40px;
-        }
-
-        .footer {
-            background-color: #333;
-            color: #fff;
-            padding: 40px 0;
-            text-align: center;
-        }
-
-        .footer-links {
-            margin-bottom: 20px;
-        }
-
-        .footer-links li {
-            display: inline-block;
-            margin: 0 10px;
-        }
-
-        .footer-links a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .footer-social-links {
-            margin-top: 20px;
-        }
-
-        .footer-social-links li {
-            display: inline-block;
-            margin: 0 10px;
-        }
-
-        .footer-social-links a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .footer-copyright {
-            margin-top: 20px;
-        }
-
-        @media (max-width: 768px) {
-            .hero-title {
-                font-size: 28px;
-            }
-
-            .hero-paragraph {
-                font-size: 16px;
-            }
-
-            .feature-title {
-                font-size: 20px;
-            }
-
-            .feature-paragraph {
-                font-size: 14px;
-            }
-
-            .pricing-table-price {
-                font-size: 24px;
-            }
-        }
-    </style>
-    <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Landing Page</title>
+    <link rel="stylesheet" href="2.css">
 </head>
-<body class="is-boxed has-animations">
-    <div class="body-wrap">
-        <header class="site-header">
-            <div class="container">
-                <div class="site-header-inner">
-                    <div class="brand header-brand">
-                        <h1 class="m-0">
-                            <a href="#">
-                                <img class="header-logo-image" src="dist/images/logo.svg" alt="Logo">
-                            </a>
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </header>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <main>
-            <section class="hero">
-                <div class="container">
-                    <div class="hero-inner">
-                        <div class="hero-copy">
-                            <h1 class="hero-title mt-0">Landing template for startups</h1>
-                            <p class="hero-paragraph">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
-                            <div class="hero-cta"><a class="button button-primary" href="#">Pre order now</a><a class="button" href="#">Get in touch</a></div>
-                        </div>
-                        <div class="hero-figure anime-element">
-                            <svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
-                                <rect width="528" height="396" style="fill:transparent;" />
-                            </svg>
-                            <div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
-                            <div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
-                            <div class="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
-                            <
+    <section class="hero">
+        <h1>Welcome to Our Modern Landing Page</h1>
+        <p>Discover the amazing features of our product and join thousands of satisfied customers.</p>
+        <a href="#cta" class="btn">Get Started</a>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Key Features</h2>
+        <div class="feature">
+            <img src="feature1.png" alt="Feature 1">
+            <h3>Feature 1</h3>
+            <p>Description of feature 1.</p>
+        </div>
+        <div class="feature">
+            <img src="feature2.png" alt="Feature 2">
+            <h3>Feature 2</h3>
+            <p>Description of feature 2.</p>
+        </div>
+        <div class="feature">
+            <img src="feature3.png" alt="Feature 3">
+            <h3>Feature 3</h3>
+            <p>Description of feature 3.</p>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <blockquote>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis ante vel est convallis consequat. Suspendisse."
+            </blockquote>
+            <cite>John Doe, CEO at Company</cite>
+        </div>
+        <div class="testimonial">
+            <blockquote>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis ante vel est convallis consequat. Suspendisse."
+            </blockquote>
+            <cite>Jane Smith, Designer at Company</cite>
+        </div>
+    </section>
+
+    <section id="cta" class="cta">
+        <h2>Ready to Get Started?</h2>
+        <p>Join us today and experience the difference.</p>
+        <a href="#contact" class="btn">Contact Us</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Modern Landing Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
 
 
