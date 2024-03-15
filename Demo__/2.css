@@ -1,125 +1,22 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Global styles */
+/* Light mode styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
+    background-color: #ffffff;
+    color: #000000;
 }
 
-/* Header styles */
-header {
-    background-color: #333;
-    padding: 20px 0;
+.container {
+    padding: 20px;
+    border: 1px solid #000000;
 }
 
-nav ul {
-    list-style: none;
-    text-align: center;
+/* Dark mode styles */
+.dark-mode body {
+    background-color: #000000;
+    color: #ffffff;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+.dark-mode .container {
+    border-color: #ffffff;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
 
-/* Hero section styles */
-.hero {
-    text-align: center;
-    padding: 100px 0;
-}
-
-.hero h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-/* Features section styles */
-.features {
-    padding: 80px 0;
-    text-align: center;
-}
-
-.features h2 {
-    font-size: 30px;
-    margin-bottom: 40px;
-}
-
-.feature {
-    margin-bottom: 40px;
-}
-
-.feature img {
-    width: 150px;
-    margin-bottom: 20px;
-}
-
-.feature h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-/* Testimonials section styles */
-.testimonials {
-    background-color: #f9f9f9;
-    padding: 80px 0;
-    text-align: center;
-}
-
-.testimonials h2 {
-    font-size: 30px;
-    margin-bottom: 40px;
-}
-
-.testimonial {
-    margin-bottom: 40px;
-}
-
-.testimonial blockquote {
-    font-style: italic;
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.testimonial cite {
-    font-weight: bold;
-}
-
-/* Call-to-action section styles */
-.cta {
-    text-align: center;
-    padding: 100px 0;
-}
-
-.cta h2 {
-    font-size: 30px;
-    margin-bottom: 30px;
-}
-
-.cta p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
